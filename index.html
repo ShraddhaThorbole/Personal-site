@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    
     <link  rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./images/application.png">
     <title>Portfolio</title>
@@ -97,10 +96,11 @@
           </div>
       </div>
     </section>
+
     <section class="Skills">
 			<hr class="line" />
-      <div class="heading">
-				<h2>Skills:</h2>
+		    <div class="heading1">
+				<h1>Skills</h1>
 			</div>
 			<div class="skillset">
 				<div class="skill">
@@ -122,18 +122,19 @@
 					<h3>Vb.NET</h3>
 				</div>
 			</div>
-    </div>
-		</section>
+        </div>
+	</section>
+
     <section class="projects">
       <hr class="line" />
 			<div class="heading">
-				<h1>Projects:</h1>
+				<h1>Projects</h1>
 			</div>
 			<div class="flex-container1">
 				<div class="project">
 					<img
-						src=""
-						alt="Recipe-page"
+						src="/Personal-site/images/recipe.webp"
+						alt="Simple-Calculator"
 						class="project-image"
 					/>
 					<div class="first">
@@ -146,59 +147,56 @@
 				</div>
         <div class="project">
 					<img
-						src=""
+						src="/Personal-site/images/Screenshot (499).webp"
 						alt="Recipe-page"
 						class="project-image"/>
 					<div class="first">
-						<a href="https://recipe-page-blush.vercel.app/" class="text">
-              View Project
-            </a>
+						<a href="https://simple-calculator-tawny.vercel.app/" class="text">
+                        View Project</a>
 					</div>
-					<h1>RECIPE  PAGE</h1>
-					<p>HTML CSS</p>
+					<h1>Calculator</h1>
+					<p>HTML CSS Javascript</p>
 				</div>		
 			</div>
+			<hr class="line">
 		</section>
-    <footer>
-			<div class="Contact">
-				<div class="Contact-info">
-					<h2>Contact</h2>
-					<p>
-						I would love to hear about your project and how I could help.I'll
-						get back to you as soon as possible.
-					</p>
-				</div>
 
-				<form class="contactme">
+	<!-- Contact Section -->
+    <footer>
+		<div class="Contact">
+			<div class="Contact-info">
+				<h1>Contact</h1>
+				<p>	Have a question or want to discuss a project? I'd love to hear from you!</p>
+        		<p>You can reach out to me via filling out the form.</p>	
+			</div>
+				<form class="contact-form">
 					<label for="name"></label>
-					<input
-						type="text"
-						id="form-name"
-						name="form-name"
-						placeholder="NAME"
-					/>
+					<input type="text" id="name" name="name" placeholder="NAME" />
+
 					<label for="email"></label>
-					<input
-						type="text"
-						id="form-email"
-						name="form-email"
-						placeholder="EMAIL"
-					/>
+					<input type="email" id="email" name="email" placeholder="EMAIL" required />
+
 					<label for="message"></label>
 					<textarea
-						name="form-message"
-						id="form-message"
-						cols="30"
-						rows="10"
-						placeholder="MESSAGE"
-					></textarea>
+						name="message" id="message" cols="30" rows="10" placeholder="MESSAGE" ></textarea>
+
 					<div class="send-button-container">
-						<button class="send-message-button">SEND MESSAGE</button>
+						<button class="send-message-button" type="submit" onclick="send()">
+							Submit
+						</button>
 					</div>
 				</form>
 			</div>
-            <hr class="line">
-			</nav>
+		</div>
+			<div class="last">
+				<div class="name">
+					<hr class="line">
+					<p>Shraddhaaa Thorbole!</p>
+				</div>
+				<div class="contact-me"> 
+					<a href="tel:+919503435096">contact me!</a>
+				</div>
+			</div>
 		</footer>
 	</body>
 </html>
